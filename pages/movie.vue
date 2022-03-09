@@ -4,7 +4,7 @@
       <PageMovieBanner :movie="movie" />
 
       <!-- Tabs section -->
-      <div class="px-2 sm:px-0 pt-2 sm:pt-0">
+      <div class="px-4 lg:px-0 pt-4 sm:pt-0">
         <div class="sm:hidden">
           <label for="tabs" class="sr-only">Select a tab</label>
           <select id="tabs" v-model="activeTab" name="tabs" class="block w-full focus:ring-indigo-500 focus:border-indigo-500 border-gray-300 rounded-md">
@@ -55,7 +55,7 @@
       </div>
 
       <!-- Content section -->
-      <div class="tabs-section px-2 sm:px-0 pt-2 sm:pt-0">
+      <div class="tabs-section px-4 lg:px-0 pt-4 lg:pt-0">
         <div v-if="activeTab === 'about' ">About</div>
         <div v-if="activeTab === 'credits' ">Credits</div>
         <div v-if="activeTab === 'reviews' ">Reviews</div>
@@ -64,7 +64,7 @@
 
       <!-- Similar views section -->
       <div id="similarMovies">
-        <div class="pt-8 pb-6 px-2 sm:px-0">
+        <div class="pt-8 pb-4 lg:pb-12 px-4 lg:px-0">
           <h3 class="text-md sm:text-xl font-bold text-gray-800">
             Others Watched These Movies Too
           </h3>

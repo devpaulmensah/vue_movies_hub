@@ -1,5 +1,5 @@
 <template>
-  <div class="pt-8 pb-12 px-2 sm:px-0">
+  <div class="pt-8 pb-4 lg:pb-12 px-4 lg:px-0">
     <h3 class="text-md sm:text-xl font-bold text-gray-800">
       Upcoming Movies
     </h3>

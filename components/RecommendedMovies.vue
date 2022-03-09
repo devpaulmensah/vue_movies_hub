@@ -1,5 +1,5 @@
 <template>
-  <div id="getStarted" class="pt-12 pb-2 px-2 sm:px-0">
+  <div class="pt-12 pb-4 lg:pb-12 px-4 lg:px-0">
     <h3 class="text-md sm:text-xl font-bold text-gray-800">Recommeded Movies</h3>
 
     <div id="recommendedScrollSection" class="snap-x flex scroll-smooth overflow-auto scroll-section mt-4">
