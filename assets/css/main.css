@@ -1,0 +1,33 @@
+html,
+body {
+    font-family: 'Inter', sans-serif !important;
+    scroll-behavior: smooth;
+    background-color: rgb(243, 244, 246);
+    font-size: 14px;
+}
+
+.page {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+main {
+    flex: 1 0 auto !important;
+}
+
+@media screen and (max-width: 767px) {
+    main {
+        margin-top: 66px;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    main {
+        margin-top: 79px;
+    }
+}
+
+.scroll-section::-webkit-scrollbar {
+    display: none;
+}
