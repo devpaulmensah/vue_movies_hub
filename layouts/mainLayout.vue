@@ -2,7 +2,7 @@
   <div class="page scroll-smooth">
     <AppHeader/>
     <main>
-      <Nuxt class="max-w-7xl mx-auto"/>
+      <Nuxt class="page-max-width mx-auto"/>
     </main>
     <AppFooter/>
   </div>

@@ -1,6 +1,6 @@
 <template>
     <div class="bg-white fixed w-full app-header shadow z-10">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6">
+        <div class="page-max-width mx-auto px-4 sm:px-6">
             <div class="flex justify-between items-center border-gray-100 py-6 md:justify-start md:space-x-10">
                 <div class="flex justify-start ">
                     <nuxt-link to="/" class="font-semibold text-lg">

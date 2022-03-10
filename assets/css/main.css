@@ -31,3 +31,7 @@ main {
 .scroll-section::-webkit-scrollbar {
     display: none;
 }
+
+.page-max-width {
+    max-width: 1335px;
+}

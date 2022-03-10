@@ -1,7 +1,7 @@
 <template>
   <div class="page">
     <main>
-      <div class="max-w-7xl w-full mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="page-max-width w-full mx-auto px-4 sm:px-6 lg:px-8">
         <div class="max-w-2xl mx-auto py-16 sm:py-16">
           <div class="text-center">
             <p class="text-sm font-semibold text-indigo-600 uppercase tracking-wide">404 error</p>
@@ -42,7 +42,7 @@
     </main>
     <AppFooter/>
   </div>
-  
+
 </template>
 
 <script>
