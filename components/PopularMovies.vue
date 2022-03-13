@@ -4,8 +4,14 @@
       Popular Movies
     </h3>
 
-    <div id="popularScrollSection" class="snap-x flex scroll-smooth overflow-auto scroll-section mt-4">
-      <div v-for="(movie, index) in movies" :key="index" class="snap-center">
+    <div v-if="movies.length < 1" id="popularScrollSection" class="snap-x flex scroll-smooth overflow-auto scroll-section mt-4">
+      <div  v-for="(n) in 8" :key="n" class="snap-start">
+        <LoadingMovieCard class="w-80 sm:w-96 mr-4"/>
+      </div>
+    </div>
+
+    <div v-else id="popularScrollSection" class="snap-x flex scroll-smooth overflow-auto scroll-section mt-4">
+      <div v-for="(movie, index) in movies" :key="index" class="snap-start">
         <HorizontalMovieCard :movie="movie" class="w-80 sm:w-96 mr-4"/>
       </div>
     </div>

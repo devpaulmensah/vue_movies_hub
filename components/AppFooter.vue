@@ -3,7 +3,7 @@
         <h2 id="footer-heading" class="sr-only">Footer</h2>
         <div class="page-max-width mx-auto py-12 px-4">
           <p class="text-base text-gray-600 dark:text-gray-200 text-center">
-              &copy; {{ new Date().getFullYear() }} VueMoviesHub. All rights reserved.
+              &copy; {{ year }} VueMoviesHub. All rights reserved.
           </p>
         </div>
     </footer>
@@ -11,6 +11,11 @@
 
 <script>
 export default {
-    name: 'AppFooter'
+  name: 'AppFooter',
+  data () {
+    return {
+      year: new Date().getFullYear()
+    }
+  }
 }
 </script>

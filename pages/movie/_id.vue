@@ -2,7 +2,7 @@
   <div>
     <div v-if="loading" class="loading-container text-center flex flex-col justify-center">
         <div class="image-section flex flex-row justify-center mb-4">
-            <svg xmlns="http://www.w3.org/2000/svg" class="h-24 w-24 animate-bounce stroke-slate-600" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-20 w-20 animate-bounce stroke-slate-600 dark:stroke-slate-400" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1">
             <path stroke-linecap="round" stroke-linejoin="round" d="M7 16a4 4 0 01-.88-7.903A5 5 0 1115.9 6L16 6a5 5 0 011 9.9M9 19l3 3m0 0l3-3m-3 3V10" />
           </svg>
         </div>
@@ -138,11 +138,11 @@
               </li>
             </ul>
           </div>
-          <div v-if="movie.reviews.reviews.length === 0" class="border p-6 bg-white mt-4 text-center">
+          <div v-if="movie.reviews.reviews.length === 0" class="border p-6 bg-white mt-4 text-center dark:bg-slate-800 dark:border-slate-700">
             <div class="image-section flex flex-row justify-center">
               <img src="~/assets/img/empty-content.svg" class="h-36 w-36 mb-4" />
             </div>
-            <h6 class="text-base font-medium">No Reviews Yet!</h6>
+            <h6 class="text-base font-medium dark:text-slate-200">No Reviews Yet!</h6>
             <p class="text-gray-500">
               This movie has not been reviewed by anyone.
             </p>

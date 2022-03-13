@@ -52,7 +52,8 @@ export default {
         '@nuxtjs/stylelint-module',
         // https://go.nuxtjs.dev/tailwindcss
         '@nuxtjs/tailwindcss',
-        '@nuxtjs/moment'
+        '@nuxtjs/moment',
+        '@nuxt/image'
     ],
 
     // Modules: https://go.nuxtjs.dev/config-modules
@@ -97,5 +98,9 @@ export default {
     },
     privateRuntimeConfig: {
         apiKey: '06e0613074567b1b8a49b5c66165b5bb'
+    },
+
+    image: {
+        domains: ['http://image.tmdb.org', 'https://res.cloudinary.com']
     }
 }
