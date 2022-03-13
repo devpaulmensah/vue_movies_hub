@@ -1,7 +1,7 @@
 <template>
   <div class="mt-2 sm:mt-6">
     <button type="button" class="py-6 h-6  align-middle focus:bg-transparent text-base text-indigo-600">
-      <nuxt-link :to="url" class="-mt-3 block">
+      <nuxt-link :to="'/'+url" class="-mt-3 block">
         View More
       </nuxt-link>
     </button>
