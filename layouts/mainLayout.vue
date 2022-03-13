@@ -2,7 +2,7 @@
   <div class="page scroll-smooth">
     <AppHeader/>
     <main>
-      <Nuxt v-if="$nuxt.isOnline" class="page-max-width mx-auto"/>
+      <Nuxt v-if="$nuxt.isOnline" class="max-w-screen-xl mx-auto"/>
       <div v-if="$nuxt.isOffline" class="text-center flex flex-col justify-center loading-container">
         <div class="image-section flex flex-row justify-center mb-4">
           <svg xmlns="http://www.w3.org/2000/svg" class="h-20 w-20 animate-bounce stroke-slate-600 dark:stroke-slate-400" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1">

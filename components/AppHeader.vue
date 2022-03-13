@@ -1,6 +1,6 @@
 <template>
     <div class="bg-white dark:bg-slate-900 fixed w-full app-header shadow z-10">
-        <div class="page-max-width mx-auto px-4 sm:px-6">
+        <div class="max-w-screen-xl mx-auto px-4 sm:px-0">
             <div class="flex justify-between items-center border-gray-100 py-6 md:justify-start md:space-x-10">
                 <div class="flex justify-start ">
                     <nuxt-link to="/" class="font-semibold text-lg dark:text-gray-200">
@@ -21,13 +21,13 @@
                     </button>
                 </div>
                 <nav class="hidden md:flex space-x-5">
-                    <nuxt-link to="top-rated" class="text-base font-medium text-gray-500 dark:text-gray-300">
+                    <nuxt-link to="/top-rated" class="text-base font-medium text-gray-500 dark:text-gray-300">
                         Top Rated
                     </nuxt-link>
-                    <nuxt-link to="popular" class="text-base font-medium text-gray-500 dark:text-gray-300">
+                    <nuxt-link to="/popular" class="text-base font-medium text-gray-500 dark:text-gray-300">
                         Popular
                     </nuxt-link>
-                    <nuxt-link to="upcoming" class="text-base font-medium text-gray-500 dark:text-gray-300">
+                    <nuxt-link to="/upcoming" class="text-base font-medium text-gray-500 dark:text-gray-300">
                         Upcoming
                     </nuxt-link>
                 </nav>
@@ -83,7 +83,7 @@
                                   </span>
                                 </nuxt-link>
 
-                                <nuxt-link to="top-rated" class="-m-3 p-3 flex items-center rounded-md">
+                                <nuxt-link to="/top-rated" class="-m-3 p-3 flex items-center rounded-md">
                                   <!-- Heroicon name: outline/cursor-click -->
                                   <svg class="flex-shrink-0 h-6 w-6 text-indigo-600" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
                                       <path stroke-linecap="round" stroke-width="2" stroke-linejoin="round" d="M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.286 6.857L21 12l-5.714 2.143L13 21l-2.286-6.857L5 12l5.714-2.143L13 3z" />
@@ -94,7 +94,7 @@
                                   </span>
                                 </nuxt-link>
 
-                                <nuxt-link to="popular" class="-m-3 p-3 flex items-center rounded-md">
+                                <nuxt-link to="/popular" class="-m-3 p-3 flex items-center rounded-md">
                                   <!-- Heroicon name: outline/shield-check -->
                                   <svg class="flex-shrink-0 h-6 w-6 text-indigo-600" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
                                       <path stroke-linecap="round" stroke-width="2" stroke-linejoin="round" d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6" />
@@ -104,7 +104,7 @@
                                   </span>
                                 </nuxt-link>
 
-                                <nuxt-link to="upcoming" class="-m-3 p-3 flex items-center rounded-md">
+                                <nuxt-link to="/upcoming" class="-m-3 p-3 flex items-center rounded-md">
                                   <svg class="flex-shrink-0 h-6 w-6 text-indigo-600" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
                                       <path stroke-linecap="round" stroke-width="2" stroke-linejoin="round" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
                                   </svg>

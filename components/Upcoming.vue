@@ -12,7 +12,7 @@
 
     <div v-else id="upcomingScrollSection" class="snap-x flex scroll-smooth overflow-auto scroll-section mt-4">
       <div v-for="(movie, index) in movies" :key="index" class="snap-start">
-        <HorizontalMovieCard :movie="movie" class="w-80 sm:w-96 mr-4"/>
+        <MovieCard :movie="movie" class="w-80 sm:w-96 mr-4"/>
       </div>
     </div>
 
@@ -22,11 +22,11 @@
 
 <script>
 import _ from 'lodash';
-import HorizontalMovieCard from "./HorizontalMovieCard.vue";
+import MovieCard from "./MovieCard.vue";
 
 export default {
     name: "UpcomingMovies",
-    components: { HorizontalMovieCard },
+    components: { MovieCard },
     data () {
       return {
         movies: []

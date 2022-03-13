@@ -1,7 +1,7 @@
 <template>
   <div class="movie-card bg-white border p-5 dark:bg-slate-800 dark:border-slate-700">
     <div class="image-section w-full h-full">
-     <nuxt-img :src="movieImage" :alt="title" draggable="false" loading="lazy"/>
+     <NuxtImg class="w-full" :src="movieImage" :alt="title" draggable="false" loading="lazy"/>
     </div>
     <nuxt-link :to="movieUrl" class="font-medium text-base py-2 truncate block text-indigo-600 dark:text-indigo-500" >
         {{ title }}
@@ -22,7 +22,7 @@
 
 <script>
 export default {
-  name: "HorizontalMovieCard",
+  name: "MovieCard",
   props: {
     movie: {
       type: Object,

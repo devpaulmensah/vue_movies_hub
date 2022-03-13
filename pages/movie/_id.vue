@@ -158,7 +158,7 @@
           </h3>
           <div id="recommendedScrollSection" class="snap-x flex scroll-smooth overflow-auto scroll-section mt-4">
             <div v-for="(recommendedMovie, index) in movie.recommendedMovies" :key="index" class="snap-center">
-              <HorizontalMovieCard :movie="recommendedMovie" class="w-80 sm:w-96 mr-4"/>
+              <MovieCard :movie="recommendedMovie" class="w-80 sm:w-96 mr-4"/>
             </div>
           </div>
           <ViewMoreAndScroll class="hidden sm:block" scroll-id="recommendedScrollSection" url="#" />
@@ -173,7 +173,7 @@
           </h3>
           <div id="similarScrollSection" class="snap-x flex scroll-smooth overflow-auto scroll-section mt-4">
             <div v-for="(similarMovie, index) in movie.similarMovies" :key="index" class="snap-center">
-              <HorizontalMovieCard :movie="similarMovie" class="w-80 sm:w-96 mr-4"/>
+              <MovieCard :movie="similarMovie" class="w-80 sm:w-96 mr-4"/>
             </div>
           </div>
           <ViewMoreAndScroll class="hidden sm:block" scroll-id="similarScrollSection" url="#" />
@@ -222,9 +222,7 @@ export default {
           .then(result => {
             this.movie = result.data.data;
             this.pageTitle = this.movie.movie.title;
-          }).catch(err => {
-            console.log(err.response)
-          });
+          })
 
           this.loading = false;
       },
