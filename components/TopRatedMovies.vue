@@ -1,6 +1,6 @@
 <template>
   <div class="pt-8 pb-4 px-4 lg:px-0">
-    <h3 class="text-md sm:text-xl font-bold text-gray-800">
+    <h3 class="text-md sm:text-xl font-bold text-gray-800 dark:text-slate-100">
       Top Rated Movies
     </h3>
 
@@ -31,9 +31,9 @@ export default {
     },
     methods: {
       async getTopRatedMovies () {
-        await this.$axios.get(`${this.$config.moviesBaseUrl}/movie/top_rated?api_key=${this.$config.apiKey}`)
+        await this.$axios.get('movies/top-rated')
         .then(response => {
-          this.movies = _.shuffle(response.data.results).splice(0, 8);
+          this.movies = _.shuffle(response.data.data.results).splice(0, 8);
         })
       }
     }

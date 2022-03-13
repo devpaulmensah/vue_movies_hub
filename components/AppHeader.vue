@@ -1,9 +1,9 @@
 <template>
-    <div class="bg-white fixed w-full app-header shadow z-10">
+    <div class="bg-white dark:bg-slate-900 fixed w-full app-header shadow z-10">
         <div class="page-max-width mx-auto px-4 sm:px-6">
             <div class="flex justify-between items-center border-gray-100 py-6 md:justify-start md:space-x-10">
                 <div class="flex justify-start ">
-                    <nuxt-link to="/" class="font-semibold text-lg">
+                    <nuxt-link to="/" class="font-semibold text-lg dark:text-gray-200">
                         VueMoviesHub
                     </nuxt-link>
                 </div>
@@ -21,18 +21,18 @@
                     </button>
                 </div>
                 <nav class="hidden md:flex space-x-5">
-                    <nuxt-link to="top-rated" class="text-base font-medium text-gray-500 hover:text-gray-900">
+                    <nuxt-link to="top-rated" class="text-base font-medium text-gray-500 dark:text-gray-300">
                         Top Rated
                     </nuxt-link>
-                    <nuxt-link to="popular" class="text-base font-medium text-gray-500 hover:text-gray-900">
+                    <nuxt-link to="popular" class="text-base font-medium text-gray-500 dark:text-gray-300">
                         Popular
                     </nuxt-link>
-                    <nuxt-link to="upcoming" class="text-base font-medium text-gray-500 hover:text-gray-900">
+                    <nuxt-link to="upcoming" class="text-base font-medium text-gray-500 dark:text-gray-300">
                         Upcoming
                     </nuxt-link>
                 </nav>
                 <div class="hidden md:flex items-center justify-end md:flex-1 lg:w-0">
-                    <nuxt-link to="/sign-in" class="whitespace-nowrap text-base font-medium text-gray-500 hover:text-gray-900">
+                    <nuxt-link to="/sign-in" class="whitespace-nowrap text-base font-medium text-gray-500 dark:text-gray-300">
                         Sign in
                     </nuxt-link>
                     <nuxt-link to="/sign-up" class="ml-8 whitespace-nowrap inline-flex items-center justify-center px-4 py-2 border border-transparent rounded-md shadow-sm text-base font-medium text-white bg-indigo-600 hover:bg-indigo-700">
