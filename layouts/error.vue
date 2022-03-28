@@ -18,10 +18,10 @@
                 <div class="min-w-0 flex-1">
                   <h3 class="text-base font-medium text-gray-900">
                     <span >
-                      <nuxt-link :to="popularPage.url" class="focus:outline-none">
+                      <NuxtLink :to="popularPage.url" class="focus:outline-none">
                         <span class="absolute inset-0" aria-hidden="true"></span>
                         {{ popularPage.title }}
-                      </nuxt-link>
+                      </NuxtLink>
                     </span>
                   </h3>
                   <p class="text-base text-gray-500">{{ popularPage.description }}</p>
@@ -34,7 +34,7 @@
               </li>
             </ul>
             <div class="mt-8">
-              <nuxt-link to="/" class="text-base font-medium text-indigo-600 hover:text-indigo-500">Or go back home<span aria-hidden="true"> &rarr;</span></nuxt-link>
+              <NuxtLink to="/" class="text-base font-medium text-indigo-600 hover:text-indigo-500">Or go back home<span aria-hidden="true"> &rarr;</span></NuxtLink>
             </div>
           </div>
         </div>

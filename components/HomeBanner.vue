@@ -13,7 +13,7 @@
         Get access to top-rated, popular and upcoming movies and watch trailers and many more. All for free!
       </p>
       <div class="mt-10 max-w-sm mx-auto sm:max-w-none sm:flex sm:justify-center">
-          <nuxt-link to="/top-rated" class="flex items-center justify-center px-4 py-3 border border-transparent text-base font-medium rounded-md shadow-sm text-indigo-700 bg-white hover:bg-indigo-50 sm:px-8">Explore</nuxt-link>
+          <NuxtLink to="/top-rated" class="flex items-center justify-center px-4 py-3 border border-transparent text-base font-medium rounded-md shadow-sm text-indigo-700 bg-white hover:bg-indigo-50 sm:px-8">Explore</NuxtLink>
       </div>
     </div>
     <div id="scrollStartSection"></div>

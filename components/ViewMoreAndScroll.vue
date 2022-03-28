@@ -1,9 +1,9 @@
 <template>
   <div class="mt-2 sm:mt-6">
     <button type="button" class="py-6 h-6  align-middle focus:bg-transparent text-base text-indigo-600">
-      <nuxt-link :to="'/'+url" class="-mt-3 block">
+      <NuxtLink :to="'/'+url" class="-mt-3 block">
         View More
-      </nuxt-link>
+      </NuxtLink>
     </button>
     <button class="float-right py-3 hidden sm:block text-sm px-3 bg-white rounded-full ml-3 dark:bg-slate-800" @click="scrollRight">
       <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 stroke-indigo-600 dark:stroke-indigo-500" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">

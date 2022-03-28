@@ -1,11 +1,12 @@
 <template>
   <div>
-    <div v-if="loading" class="grid gap-4 grid-cols-1 md:grid-col-2 lg:grid-cols-4 mt-4 mb-4 px-4 sm:px-0">
+    <PageDescription v-if="!loading" :title="'Top Rated Movies'" :image-url="selectedMovie.backdropPath"/>
+    <div v-if="loading" class="grid gap-4 sm:grid-cols-2 lg:grid-cols-4 mt-4 mb-4 px-4 lg:px-0">
         <div v-for="(n) in 16" :key="n">
           <LoadingMovieCard class="w-full"/>
         </div>
     </div>
-    <div v-else class="grid gap-4 grid-cols-1 md:grid-col-2 lg:grid-cols-4 mt-4 mb-4 px-4 sm:px-0">
+    <div v-else class="grid gap-4 sm:grid-cols-2 lg:grid-cols-4 mt-4 mb-4 px-4 lg:px-0">
         <div v-for="(movie, index) in movies" :key="index">
           <MovieCard :movie="movie" class="w-full" />
         </div>
@@ -44,9 +45,10 @@
 <script>
 import _ from 'lodash';
 import MovieCard from "~/components/MovieCard.vue";
+import PageDescription from '~/components/PageDescription.vue';
 export default {
   name: "TopRatedPage",
-  components: { MovieCard },
+  components: { MovieCard, PageDescription },
   layout: "mainLayout",
   data() {
       return {

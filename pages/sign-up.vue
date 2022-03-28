@@ -10,9 +10,9 @@
                     </h2>
                     <p class="mt-2 text-gray-600">
                         Or
-                    <nuxt-link to="/sign-in" class="font-medium text-indigo-600 hover:text-indigo-500">
+                    <NuxtLink to="/sign-in" class="font-medium text-indigo-600 hover:text-indigo-500">
                         sign in to access your account
-                    </nuxt-link>
+                    </NuxtLink>
                     </p>
                 </div>
 
@@ -51,9 +51,9 @@
 
                             <div class="flex items-center justify-between">
                                 <div>
-                                    <nuxt-link to="/forgot-password" class="font-medium text-indigo-600 hover:text-indigo-500">
+                                    <NuxtLink to="/forgot-password" class="font-medium text-indigo-600 hover:text-indigo-500">
                                     Forgot your password?
-                                    </nuxt-link>
+                                    </NuxtLink>
                                 </div>
                             </div>
 

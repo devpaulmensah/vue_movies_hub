@@ -1,11 +1,11 @@
 <template>
     <div class="bg-white dark:bg-slate-900 fixed w-full app-header shadow z-10">
-        <div class="max-w-screen-xl mx-auto px-4 sm:px-0">
+        <div class="max-w-screen-xl mx-auto px-4 lg:px-0">
             <div class="flex justify-between items-center border-gray-100 py-6 md:justify-start md:space-x-10">
                 <div class="flex justify-start ">
-                    <nuxt-link to="/" class="font-semibold text-lg dark:text-gray-200">
+                    <NuxtLink to="/" class="font-semibold text-lg dark:text-gray-200">
                         VueMoviesHub
-                    </nuxt-link>
+                    </NuxtLink>
                 </div>
                 <div class="-mr-2 -my-2 md:hidden">
                     <button
@@ -21,23 +21,23 @@
                     </button>
                 </div>
                 <nav class="hidden md:flex space-x-5">
-                    <nuxt-link to="/top-rated" class="text-base font-medium text-gray-500 dark:text-gray-300">
+                    <NuxtLink to="/top-rated" class="text-base font-medium text-gray-500 dark:text-gray-300">
                         Top Rated
-                    </nuxt-link>
-                    <nuxt-link to="/popular" class="text-base font-medium text-gray-500 dark:text-gray-300">
+                    </NuxtLink>
+                    <NuxtLink to="/popular" class="text-base font-medium text-gray-500 dark:text-gray-300">
                         Popular
-                    </nuxt-link>
-                    <nuxt-link to="/upcoming" class="text-base font-medium text-gray-500 dark:text-gray-300">
+                    </NuxtLink>
+                    <NuxtLink to="/upcoming" class="text-base font-medium text-gray-500 dark:text-gray-300">
                         Upcoming
-                    </nuxt-link>
+                    </NuxtLink>
                 </nav>
                 <div class="hidden md:flex items-center justify-end md:flex-1 lg:w-0">
-                    <nuxt-link to="/sign-in" class="whitespace-nowrap text-base font-medium text-gray-500 dark:text-gray-300">
+                    <NuxtLink to="/sign-in" class="whitespace-nowrap text-base font-medium text-gray-500 dark:text-gray-300">
                         Sign in
-                    </nuxt-link>
-                    <nuxt-link to="/sign-up" class="ml-8 whitespace-nowrap inline-flex items-center justify-center px-4 py-2 border border-transparent rounded-md shadow-sm text-base font-medium text-white bg-indigo-600 hover:bg-indigo-700">
+                    </NuxtLink>
+                    <NuxtLink to="/sign-up" class="ml-8 whitespace-nowrap inline-flex items-center justify-center px-4 py-2 border border-transparent rounded-md shadow-sm text-base font-medium text-white bg-indigo-600 hover:bg-indigo-700">
                         Sign up
-                    </nuxt-link>
+                    </NuxtLink>
                 </div>
             </div>
             <!--
@@ -73,7 +73,7 @@
                           </div>
                           <div class="mt-6">
                             <nav class="grid gap-y-8">
-                                <nuxt-link to="/" class="-m-3 p-3 flex items-center rounded-md">
+                                <NuxtLink to="/" class="-m-3 p-3 flex items-center rounded-md">
                                   <!-- Heroicon name: outline/chart-bar -->
                                   <svg class="flex-shrink-0 h-6 w-6 text-indigo-600" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
                                       <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6" />
@@ -81,9 +81,9 @@
                                   <span class="ml-3 text-base font-medium text-gray-900 dark:text-slate-200">
                                       Home
                                   </span>
-                                </nuxt-link>
+                                </NuxtLink>
 
-                                <nuxt-link to="/top-rated" class="-m-3 p-3 flex items-center rounded-md">
+                                <NuxtLink to="/top-rated" class="-m-3 p-3 flex items-center rounded-md">
                                   <!-- Heroicon name: outline/cursor-click -->
                                   <svg class="flex-shrink-0 h-6 w-6 text-indigo-600" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
                                       <path stroke-linecap="round" stroke-width="2" stroke-linejoin="round" d="M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.286 6.857L21 12l-5.714 2.143L13 21l-2.286-6.857L5 12l5.714-2.143L13 3z" />
@@ -92,9 +92,9 @@
                                   <span class="ml-3 text-base font-medium text-gray-900 dark:text-slate-200">
                                       Top Rated
                                   </span>
-                                </nuxt-link>
+                                </NuxtLink>
 
-                                <nuxt-link to="/popular" class="-m-3 p-3 flex items-center rounded-md">
+                                <NuxtLink to="/popular" class="-m-3 p-3 flex items-center rounded-md">
                                   <!-- Heroicon name: outline/shield-check -->
                                   <svg class="flex-shrink-0 h-6 w-6 text-indigo-600" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
                                       <path stroke-linecap="round" stroke-width="2" stroke-linejoin="round" d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6" />
@@ -102,16 +102,16 @@
                                   <span class="ml-3 text-base font-medium text-gray-900 dark:text-slate-200">
                                       Popular
                                   </span>
-                                </nuxt-link>
+                                </NuxtLink>
 
-                                <nuxt-link to="/upcoming" class="-m-3 p-3 flex items-center rounded-md">
+                                <NuxtLink to="/upcoming" class="-m-3 p-3 flex items-center rounded-md">
                                   <svg class="flex-shrink-0 h-6 w-6 text-indigo-600" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
                                       <path stroke-linecap="round" stroke-width="2" stroke-linejoin="round" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
                                   </svg>
                                   <span class="ml-3 text-base font-medium text-gray-900 dark:text-slate-200">
                                       Upcoming
                                   </span>
-                                </nuxt-link>
+                                </NuxtLink>
                             </nav>
                           </div>
                       </div>
