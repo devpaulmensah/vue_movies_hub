@@ -62,7 +62,8 @@ export default {
         '@nuxtjs/axios',
         // https://go.nuxtjs.dev/pwa
         '@nuxtjs/pwa',
-        '@nuxtjs/dotenv'
+        '@nuxtjs/dotenv',
+        '@nuxtjs/auth-next',
     ],
 
     // Axios module configuration: https://go.nuxtjs.dev/config-axios
@@ -102,5 +103,32 @@ export default {
 
     image: {
         domains: ['http://image.tmdb.org', 'https://res.cloudinary.com']
+    },
+
+    auth: {
+        redirect: {
+            login: "/sign-in",
+            logout: "/",
+            callback: "/",
+            home: '/profile'
+        },
+        strategies: {
+            local: {
+                token: {
+                    property: "token",
+                    global: true,
+                    required: true,
+                    type: "Bearer"
+                },
+                user: {
+                    property: "data",
+                    autoFetch: true
+                },
+                endpoints: {
+                    logout: { url: '/', method: 'get' },
+                    user: { url: "/user/profile/", method: "get" }
+                }
+            }
+        }
     }
 }

@@ -21,12 +21,12 @@ export default {
   props: {
     imageUrl: {
       type: String,
-      default: null,
+      default: "",
       required: true
     },
     title: {
       type: String,
-      default: null,
+      default: "",
       required: true
     }
   },

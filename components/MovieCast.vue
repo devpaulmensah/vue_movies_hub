@@ -1,7 +1,7 @@
 <template>
-    <div class="w-full border border-gray-300 bg-white p-3 flex items-center space-x-4 hover:ring-2 hover:ring-offset-1 hover:ring-indigo-500 dark:bg-slate-800 dark:border-slate-700">
+    <div class="w-full border border-gray-300 rounded-lg bg-white p-3 flex items-center space-x-4 hover:ring-2 hover:ring-offset-1 hover:ring-indigo-500 dark:bg-slate-800 dark:border-slate-700">
       <div class="flex-shrink-0">
-        <img class="h-10 w-10" :alt="name" :src="profileImageUrl" loading="lazy">
+        <img class="h-10 w-10 rounded-sm" :alt="name" :src="profileImageUrl" loading="lazy">
       </div>
       <div class="flex-1 min-w-0">
         <p class="text-base font-medium text-gray-900 dark:text-slate-100">{{ name }}</p>

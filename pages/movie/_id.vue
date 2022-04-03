@@ -12,13 +12,13 @@
         </p>
     </div>
     <div v-else>
-      <PageMovieBanner :movie="movie.movie" :videos="movie.videos.videos" />
+      <PageMovieBanner :movie="movie.movie" :videos="movie.videos.videos" :is-favorite-movie="movie.isFavoriteMovie" />
 
       <!-- Tabs section -->
       <div class="px-4 lg:px-0 pt-4 sm:pt-0">
         <div class="sm:hidden">
           <label for="tabs" class="sr-only">Select a tab</label>
-          <select id="tabs" v-model="activeTab" name="tabs" class="block w-full focus:ring-indigo-500 focus:border-indigo-500 border-gray-300 dark:bg-slate-800 dark:border-slate-700 dark:text-slate-100">
+          <select id="tabs" v-model="activeTab" name="tabs" class="rounded-lg block w-full focus:ring-indigo-500 focus:border-indigo-500 border-gray-300 dark:bg-slate-800 dark:border-slate-700 dark:text-slate-100">
             <option value="about">About</option>
             <option value="credits">Credits</option>
             <option value="reviews">Reviews</option>
@@ -131,7 +131,7 @@
         <!-- Reviews Section -->
         <div v-if="activeTab == 'reviews' ">
           <h6 class="text-md sm:text-xl font-bold text-gray-800 dark:text-slate-100">Reviews</h6>
-          <div v-if="movie.reviews.reviews.length > 0" class="flow-root border p-6 bg-white mt-4 dark:bg-slate-800 dark:border-slate-700 ">
+          <div v-if="movie.reviews.reviews.length > 0" class="flow-root border rounded-lg p-6 bg-white mt-4 dark:bg-slate-800 dark:border-slate-700 ">
             <ul id="reviews-list" role="list" class="-mb-8">
               <li v-for="(review, index) in movie.reviews.reviews" :key="index">
                 <MovieReview :review="review"/>
@@ -180,6 +180,8 @@
         </div>
       </div>
 
+      <!-- Add extra space for small devices -->
+      <div class="sm:pt-0 pt-3"></div>
     </div>
   </div>
 </template>

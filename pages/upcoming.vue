@@ -1,17 +1,17 @@
 <template>
   <div>
-    <PageDescription v-if="!loading" :title="'Upcoming Movies'" :image-url="selectedMovie.backdropPath"/>
-    <div v-if="loading" class="grid gap-4 sm:grid-cols-2 lg:grid-cols-4 mt-4 mb-4 px-4 lg:px-0">
+    <PageDescription v-if="!loading" :title="'Upcoming Movies'" :image-url="selectedMovie.backdropPath || ''"/>
+    <div v-if="loading" class="grid gap-4 sm:grid-cols-2 lg:grid-cols-4 mt-4 mb-4 px-4 lg:px-0 content-section">
         <div v-for="(n) in 16" :key="n">
           <LoadingMovieCard class="w-full"/>
         </div>
     </div>
-    <div v-else class="grid gap-4 sm:grid-cols-2 lg:grid-cols-4 mt-4 mb-4 px-4 lg:px-0">
+    <div v-else class="grid gap-4 sm:grid-cols-2 lg:grid-cols-4 mt-4 mb-4 px-4 lg:px-0 content-section">
         <div v-for="(movie, index) in movies" :key="index">
           <MovieCard :movie="movie" class="w-full" />
         </div>
     </div>
-    <div v-if="!loading" class="mb-4">
+    <div v-if="!loading" class="mb-24 sm:mb-4 content-section">
       <nav class="border-t border-gray-200 dark:border-slate-700 px-4 flex items-center justify-between sm:px-0">
         <div class="-mt-px w-0 flex-1 flex">
           <button class="border-t-2 border-transparent pt-4 pr-1 inline-flex items-center text-sm font-medium text-gray-500 hover:text-gray-700 hover:border-gray-300" @click="loadPrevious">

@@ -1,9 +1,9 @@
 <template>
   <div>
     <HomeBanner/>
-    <TopRatedMovies/>
-    <PopularMovies/>
-    <Upcoming/>
+    <TopRatedMovies class="content-section"/>
+    <PopularMovies class="content-section"/>
+    <Upcoming class="content-section"/>
   </div>
 </template>
 

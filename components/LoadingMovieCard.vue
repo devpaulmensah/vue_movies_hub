@@ -1,5 +1,5 @@
 <template>
-  <div class="movie-card bg-white border p-5 dark:bg-slate-800 dark:border-slate-700">
+  <div class="movie-card rounded-lg bg-white border p-5 dark:bg-slate-800 dark:border-slate-700">
     <div class="animate-pulse bg-gray-400 dark:bg-slate-700 image-section mb-3  w-full"></div>
     <div class="animate-pulse bg-gray-300 dark:bg-slate-600 h-5 w-72 mt-2 mb-3"></div>
     <div class="animate-pulse bg-gray-300 dark:bg-slate-600 h-4 w-36 mb-1"></div>

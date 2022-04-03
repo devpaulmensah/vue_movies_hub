@@ -2,7 +2,7 @@
   <div class="relative pb-8">
     <div class="relative flex items-start space-x-4">
       <div class="relative">
-        <img class="h-10 w-10 sm:h-14 sm:w-14 bg-gray-400 flex items-center justify-center" :alt="review.author" :src="profileImageUrl" loading="lazy">
+        <img class="h-10 w-10 sm:h-14 sm:w-14 bg-gray-400 flex rounded-sm items-center justify-center" :alt="review.author" :src="profileImageUrl" loading="lazy">
 
         <span class="absolute -bottom-0.5 -right-1 bg-white dark:bg-slate-800 rounded-tl px-0.5 py-px ">
           <!-- Heroicon name: solid/chat-alt -->
