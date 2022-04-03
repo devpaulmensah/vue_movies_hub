@@ -20,3 +20,8 @@ $ yarn generate
 # clone the dotnet api project and follow instructions to run
 $ git clone https://github.com/devpaulmensah/movieshub-api.git
 ```
+
+## Preview
+![light_mode_preview](VueMoviesHub_LightMode.png)
+
+![dark_mode_preview](VueMoviesHub_DarkMode.png)
