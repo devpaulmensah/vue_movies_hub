@@ -13,16 +13,16 @@ export default {
         meta: [
             { charset: 'utf-8' },
             { name: 'viewport', content: 'width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no' },
-            { hid: 'description', name: 'description', content: '' },
+            { hid: 'description', name: 'description', content: 'Get access to top-rated, popular and upcoming movies and watch trailers and many more. All for free!' },
             { name: 'format-detection', content: 'telephone=no' },
-            { name: 'title', content: 'Vue Movies Hub' },
+            { name: 'title', content: 'Movies Hub' },
             { name: 'apple-mobile-web-app-capable', content: 'yes' },
-            { property: 'og:site_name', content: 'Vue Movies Hub' },
-            { name: 'description', content: '_template_description_' },
-            { property: 'og:type', content: '_template_og_type_' },
-            { property: 'og:title', content: '_template_title' },
-            { property: 'og:description', content: '_template_og_description_' },
-            { property: 'og:image', content: '_template_og_image_' }
+            { property: 'og:site_name', content: 'Movies Hub' },
+            { name: 'description', content: 'Get access to top-rated, popular and upcoming movies and watch trailers and many more. All for free!' },
+            { property: 'og:type', content: 'website' },
+            { property: 'og:title', content: 'Movies Hub' },
+            { property: 'og:description', content: 'Get access to top-rated, popular and upcoming movies and watch trailers and many more. All for free!' },
+            // { property: 'og:image', content: '_template_og_image_' }
         ],
         link: [
             { rel: 'icon shortcut', type: 'image/x-icon', href: '/favicon.ico' },
@@ -70,13 +70,6 @@ export default {
     axios: {
         // Workaround to avoid enforcing hard-coded localhost:3000: https://github.com/nuxt-community/axios-module/issues/308
         baseURL: 'https://localhost:44349/api/v1',
-    },
-
-    // PWA module configuration: https://go.nuxtjs.dev/pwa
-    pwa: {
-        manifest: {
-            lang: 'en',
-        },
     },
 
     // Build Configuration: https://go.nuxtjs.dev/config-build
@@ -130,5 +123,20 @@ export default {
                 }
             }
         }
-    }
+    },
+
+    pwa: {
+        manifest: {
+            lang: 'en',
+            name: 'Movies Hub',
+            short_name: 'Movies Hub'
+        },
+        meta: {
+            name: 'Movies Hub',
+            author: 'Paul Mensah'
+        },
+        icon: {
+            sizes: [512]
+        }
+    },
 }
