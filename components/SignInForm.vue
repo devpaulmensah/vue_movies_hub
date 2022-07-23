@@ -29,7 +29,7 @@
       <div>
         <label for="otpCode" class="block font-medium text-gray-700 dark:text-gray-100">OTP Code</label>
         <div class="mt-1 flex">
-          <span class="inline-flex items-center px-4 border border-r-0 border-gray-300 bg-gray-50 text-gray-500 font-medium">{{ otpPrefixDisplay }}</span>
+          <span class="rounded-l-md inline-flex items-center px-4 border border-r-0 border-gray-300 bg-gray-50 text-gray-500 font-medium">{{ otpPrefixDisplay }}</span>
           <input
             id="otpCode"
             v-model="otpVerification.code"
@@ -40,7 +40,7 @@
             type="tel"
             placeholder="123456"
             required
-            class="rounded-md appearance-none block w-full px-3 py-2 border border-gray-300  placeholder-gray-400 focus:outline-none focus:ring-indigo-500 focus:border-indigo-500">
+            class="rounded-r-md appearance-none block w-full px-3 py-2 border border-gray-300  placeholder-gray-400 focus:outline-none focus:ring-indigo-500 focus:border-indigo-500">
         </div>
       </div>
 
@@ -92,6 +92,7 @@ export default {
             message: "",
             title: "",
             otpVerification: {
+              requestId: "",
               prefix: "",
               code: ""
             },
@@ -112,6 +113,7 @@ export default {
           await this.$axios.get(`auth/otp/request/${this.otpRequest.mobileNumber}`)
           .then((result) => {
             this.otpVerification.prefix = result.data.data.prefix;
+            this.otpVerification.requestId = result.data.data.requestId;
             this.isRequestForOtp = false;
           }).catch((err) => {
             this.title = "OTP Request Error";
