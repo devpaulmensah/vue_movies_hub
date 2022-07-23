@@ -63,7 +63,7 @@ export default {
         // https://go.nuxtjs.dev/pwa
         '@nuxtjs/pwa',
         '@nuxtjs/dotenv',
-        '@nuxtjs/auth-next',
+        '@nuxtjs/auth-next'
     ],
 
     // Axios module configuration: https://go.nuxtjs.dev/config-axios

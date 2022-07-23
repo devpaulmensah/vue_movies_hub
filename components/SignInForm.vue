@@ -42,6 +42,7 @@
             required
             class="rounded-r-md appearance-none block w-full px-3 py-2 border border-gray-300  placeholder-gray-400 focus:outline-none focus:ring-indigo-500 focus:border-indigo-500">
         </div>
+        <div class="mt-4">OTP code has been sent to <span class="font-medium">{{ otpRequest.mobileNumber  }}.</span></div>
       </div>
 
       <div>
